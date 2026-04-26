@@ -1,0 +1,14 @@
+langchain
+langgraph
+mcp
+fastapi
+redis
+chromadb
+streamlit
+langchain-chroma
+langchain-text-splitters
+python-dotenv
+pydantic
+uvicorn
+tiktoken
+requests

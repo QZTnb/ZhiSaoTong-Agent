@@ -1,0 +1,27 @@
+2026-03-22 23:21:47,975 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 23:21:47,975 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你好
+2026-03-22 23:21:59,320 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 23:21:59,321 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你会编程吗
+2026-03-22 23:22:12,113 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 23:22:12,114 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 你认识钟文韬吗
+2026-03-22 23:29:13,831 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 23:29:13,832 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 介绍一下你自己
+2026-03-22 23:29:52,188 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-22 23:29:52,188 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 天津怎么用
+2026-03-22 23:29:55,843 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_user_location
+2026-03-22 23:29:55,844 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{}
+2026-03-22 23:29:56,115 - agent - WARNING - agent_tools.py:129 - [get_user_location]高德返回失败 info=INVALID_USER_KEY infocode=10001 ip=202.113.184.22
+2026-03-22 23:29:56,115 - agent - INFO - middleware.py:24 - [tool monitor]工具get_user_location调用成功
+2026-03-22 23:29:56,174 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-22 23:29:56,175 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 未知城市
+2026-03-22 23:29:59,477 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：get_weather
+2026-03-22 23:29:59,479 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'city': '天津'}
+2026-03-22 23:30:00,097 - agent - ERROR - agent_tools.py:117 - [get_weather]天气查询失败 city=天津 err=城市解析失败: INVALID_USER_KEY
+2026-03-22 23:30:00,098 - agent - INFO - middleware.py:24 - [tool monitor]工具get_weather调用成功
+2026-03-22 23:30:00,316 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-22 23:30:00,317 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 城市天津天气查询失败，请稍后重试
+2026-03-22 23:30:03,774 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-22 23:30:03,774 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '扫地机器人在城市家庭中的基本使用方法和注意事项'}
+2026-03-22 23:30:07,954 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-22 23:30:09,733 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-22 23:30:09,733 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 扫地机器人在城市家庭中的基本使用方法包括：首次使用前需充满电，清理地面障碍物，设置虚拟墙或禁区以保护特定区域，并定期清空集尘盒、清洁滚刷和滤网。注意事项包括：避免在潮湿地面使用以防短路，勿让机器人长时间在阳光直射下工作，定期检查边刷和传感器是否被缠绕或遮挡，以及确保家中宠物不会干扰其正常运行。
